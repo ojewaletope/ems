@@ -1,0 +1,286 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: #eee;
+  /* height: 100vh; */
+}
+.nav_bar {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  background: #ffffff;
+}
+.nav_links {
+  display: flex;
+}
+.nav_list,
+.logo {
+  padding: 10px;
+  margin-right: 5px;
+}
+.nav_link {
+  color: #a8b2bc;
+}
+.active {
+  color: black;
+  border-bottom: 2px solid #18c4ab;
+  padding-bottom: 17px;
+}
+.project_section {
+  width: 350px;
+  margin-right: 5px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 8px;
+  /* height: 100vh; */
+}
+.section_wrapper {
+  padding: 10px 50px;
+  margin-top: 10px;
+}
+.employee_section {
+  width: 100%;
+  margin-left: 10px;
+  padding-left: 25px;
+}
+.employee_details_header {
+  padding: 0 20px;
+}
+.header_title {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.employee_details {
+  padding: 0px 20px;
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 20px !important;
+}
+.user_avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.item_container {
+  display: flex;
+  flex-direction: column;
+}
+.item_name {
+  color: #565656;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.item_title {
+  font-size: 12px;
+  color: #c0c6cd;
+}
+.item_icon {
+  height: 50px;
+  width: 50px;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 5px;
+  font-size: 20px;
+  color: green;
+}
+.project {
+  padding: 10px;
+  margin: 5px auto !important;
+  display: flex;
+}
+.project_name {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.blue_bg {
+  background: #57ccf2;
+  color: #fff;
+}
+.grey__bg {
+  background: #eee;
+  border-radius: 8px;
+}
+.red_bg {
+  background: #eb5757;
+  color: #fff;
+}
+.green_bg {
+  background: #69c7ac;
+  color: #fff;
+}
+.dp_blue_bg {
+  background: #3080ed;
+  color: #fff;
+}
+.pt_bg {
+  background: #6fcf98;
+  color: #fff;
+}
+.employee_header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+.add_employee_btn {
+  padding: 10px 50px;
+  background: #0ec9ae;
+  border-radius: 24px;
+  color: #fff;
+}
+.add_project_btn {
+  padding: 10px 50px;
+  background: #8454df;
+  border-radius: 24px;
+  color: #fff;
+  border: none;
+}
+.employee_title {
+  padding: 0 30px;
+  font-weight: bolder;
+  font-size: 30px;
+}
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+}
+.logo_circ {
+  height: 30px;
+  width: 30px;
+  background: #ff7f98;
+  border-radius: 50%;
+  margin-right: 5px;
+  position: relative;
+}
+.logo_overlay {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  border-radius: 50%;
+  top: 27px;
+  left: 189px;
+}
+.project_logo {
+  display: flex;
+}
+.logo_overlay_2 {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  left: -28px;
+  position: relative;
+  top: 7px;
+  background: #fff;
+}
+.projects_heading {
+  margin: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #d7d6dc;
+}
+.user_img_wrapper {
+  display: flex;
+  align-items: center;
+}
+.user_checkbox {
+  margin-right: 10px;
+}
+.edit_link,
+.delete_link {
+  font-size: 20px;
+  color: #c8c8d4;
+}
+.delete_icon {
+  margin-left: 10px;
+}
+.edit_icon {
+  margin-right: 10px;
+}
+.pipe_span {
+  border-right: 1px solid #ddd;
+}
+.delete_link:active {
+  color: #eb5757;
+}
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container input ~ .checkmark {
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196f3;
+  border-radius: 4px;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Employee Management System</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/bulma.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav_bar">
+        <div class="logo">
+          <div class="logo_circ"></div>
+          <div class="logo_overlay"></div>
+          <div>Internia</div>
+        </div>
+        <div>
+          <ul class="nav_links">
+            <li class="nav_list"><a class="nav_link" href="#">Calendar</a></li>
+            <li class="nav_list"><a class="nav_link" href="#">Statistic</a></li>
+            <li class="nav_list">
+              <a class="nav_link active" href="#">Employee</a>
+            </li>
+            <li class="nav_list"><a class="nav_link" href="#">Client</a></li>
+            <li class="nav_list"><a class="nav_link" href="#">Equipment</a></li>
+          </ul>
+        </div>
+        <div class="nav_misc">
+          <ul class="nav_links">
+            <li class="nav_list">
+              <a class="nav_link" href="#"><i class="fa fa-bell"></i></a>
+            </li>
+            <li class="nav_list">
+              <a class="nav_link" href="#"><i class="fa fa-envelope"></i></a>
+            </li>
+            <li class="nav_list">
+              <a class="nav_link" href="#"><i class="fa fa-user-circle"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="employee_header">
+        <h3 class="employee_title">employee</h3>
+        <div class="add_employee_btn">add employee</div>
+      </section>
+      <section class="columns section_wrapper">
+        <div class="is-two-fifths project_section">
+          <div class="project_logo">
+            <div class="logo_circ"></div>
+            <div class="logo_overlay_2"></div>
+            <span>All Employees</span>
+          </div>
+          <h4 class="projects_heading">Projects</h4>
+          <div class="project">
+            <div class="item_icon">A</div>
+            <div class="project_name">Arena Sport</div>
+          </div>
+          <div class="project">
+            <div class="item_icon">D</div>
+            <div class="project_name">DSV</div>
+          </div>
+          <div class="project grey__bg">
+            <div class="item_icon blue_bg">SM</div>
+            <div class="project_name">Seafood Mall</div>
+          </div>
+          <div class="project">
+            <div class="item_icon red_bg">FS</div>
+            <div class="project_name">Fire Star</div>
+          </div>
+          <div class="project">
+            <div class="item_icon green_bg">Z</div>
+            <div class="project_name">Zeta Bank</div>
+          </div>
+          <h4 class="projects_heading">Status</h4>
+          <div class="project">
+            <div class="item_icon dp_blue_bg">FT</div>
+            <div class="project_name">Full Time</div>
+          </div>
+          <div class="project">
+            <div class="item_icon pt_bg">PT</div>
+            <div class="project_name">Part Time</div>
+          </div>
+          <div>
+            <button class="add_project_btn">Add Project</button>
+          </div>
+        </div>
+        <div class="employee_section">
+          <div class="employee_details_header columns">
+            <div class="column">
+              <label class="container">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="column header_title">Employee &uarr;</div>
+            <div class="column header_title">Salary &uarr;</div>
+            <div class="column header_title">Status &darr;</div>
+            <div class="column header_title">Manage</div>
+          </div>
+
+          <!-- <div class="employee_details columns">
+            <div class="column">
+              <span><input type="checkbox"/></span>
+              <span><i class="fa fa-user-circle"></i></span>
+            </div>
+            <div class="column item_container">
+              <span class="item_name">John Doe</span>
+              <span class="item_title">Sofware Engineer</span>
+            </div>
+            <div class="column item_container">
+              <span class="item_name">320.00 NOK</span>
+              <span class="item_title">full time</span>
+            </div>
+            <div class="column item_container">
+              <span class="item_name">test period</span>
+              <span class="item_title">2 months</span>
+            </div>
+            <div class="column">
+              <span><i class="fa fa-pencil" aria-hidden="true"></i></span>
+              <span><i class="fa fa-trash"></i></span>
+            </div>
+          </div>
+          <div class="employee_details columns">
+            <div class="column">
+              <span><input type="checkbox"/></span>
+              <span><i class="fa fa-user-circle"></i></span>
+            </div>
+            <div class="column item_container">
+              <span class="item_name">John Doe</span>
+              <span class="item_title">Sofware Engineer</span>
+            </div>
+            <div class="column item_container">
+              <span class="item_name">320.00 NOK</span>
+              <span class="item_title">full time</span>
+            </div>
+            <div class="column item_container">
+              <span class="item_name">test period</span>
+              <span class="item_title">2 months</span>
+            </div>
+            <div class="column">
+              <span><i class="fa fa-pencil" aria-hidden="true"></i></span>
+              <span><i class="fa fa-trash"></i></span>
+            </div>
+          </div>
+          <div class="employee_details columns">
+            <div class="column">
+              <span><input type="checkbox"/></span>
+              <span><i class="fa fa-user-circle"></i></span>
+            </div>
+            <div class="column item_container">
+              <span class="item_name">John Doe</span>
+              <span class="item_title">Sofware Engineer</span>
+            </div>
+            <div class="column item_container">
+              <span class="item_name">320.00 NOK</span>
+              <span class="item_title">full time</span>
+            </div>
+            <div class="column item_container">
+              <span class="item_name">test period</span>
+              <span class="item_title">2 months</span>
+            </div>
+            <div class="column">
+              <span><i class="fa fa-pencil" aria-hidden="true"></i></span>
+              <span><i class="fa fa-trash"></i></span>
+            </div>
+          </div>
+          <div class="employee_details columns">
+            <div class="column">
+              <span><input type="checkbox"/></span>
+              <span><i class="fa fa-user-circle"></i></span>
+            </div>
+            <div class="column item_container">
+              <span class="item_name">John Doe</span>
+              <span class="item_title">Sofware Engineer</span>
+            </div>
+            <div class="column item_container">
+              <span class="item_name">320.00 NOK</span>
+              <span class="item_title">full time</span>
+            </div>
+            <div class="column item_container">
+              <span class="item_name">test period</span>
+              <span class="item_title">2 months</span>
+            </div>
+            <div class="column">
+              <span><i class="fa fa-pencil" aria-hidden="true"></i></span>
+              <span><i class="fa fa-trash"></i></span>
+            </div>
+          </div> -->
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="js/app.js"></script>
+    <script>
+      document.onreadystatechange = () => {
+        if (document.readyState === "complete") {
+          app.appController();
+        }
+      };
+    </script>
+  </body>
+</html>
